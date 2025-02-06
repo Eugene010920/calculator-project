@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Eugene010920/calculator-project.git'
+                git branch:'main', url: 'https://github.com/Eugene010920/calculator-project.git'
             }
         }
         stage('Build') {
